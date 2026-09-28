@@ -1,0 +1,84 @@
+
+npm i prisma@latest @prisma/client@latest @prisma/config @prisma/adapter-pg pg
+npx prisma init --datasource-provider postgresql
+
+---------------------- PRISMA 7 AND RECOMMENDEDLY USED -----------------------------
+npm install --save-dev prisma@7
+npx prisma init --datasource-provider postgresql
+npx prisma migrate dev --name init
+npm install @nestjs/config
+
+DATABASE SETUP PROMPT ===================>
+Set up this Neon project in the current working directory.
+
+1. `npm i -g neon@latest && neon login`
+2. `neon skills -y`
+3. `neon mcp -y`
+4. `neon link --project-id sparkling-bonus-00160989 --branch production -y`
+5. `neon config init`
+6. Update `neon.ts`:
+
+```ts
+import { defineConfig } from "@neon/config/v1";
+
+export default defineConfig({});
+```
+
+7. `neon deploy`
+----------------------------------------------------------------->
+
+    Creating module
+    - npx nest g module prisma
+
+    Creating service
+    - npx nest g service prisma
+
+    Generate the prisma module
+    npx prisma Generate
+
+npx nest g module modules/auth
+npx nest g service modules/auth
+npm i class-validator
+npm i bcrypt
+npm i @nestjs/jwt
+npm i @nestjs/passport
+node -e "console.log(require('crypto').randomBytes(64).toString('hex'))  //generate a jwt secret token
+npm i passport-jwt
+// Set global validation in main.ts
+// Set CORS Origin Protection
+// Enable Swagger Documentations
+npm i @nestjs/swagger
+
+npx nest g module modules/users  // install user module 
+npx nest g controller modules/users  // install user controller 
+npx nest g service modules/users  // install user service 
+
+npx nest g module modules/category  // install category module 
+npx nest g controller modules/category  // install category controller 
+npx nest g service modules/category  // install category service
+
+npx nest g module modules/product  // install product module 
+npx nest g controller modules/category  // install product controller 
+npx nest g service modules/category  // install product service
+
+npx nest g module modules/orders  // install orders module 
+npx nest g controller modules/orders  // install orders controller 
+npx nest g service modules/orders  // install orders service
+
+npx nest g module modules/payments  // install payments module 
+npx nest g controller modules/payments  // install payments controller 
+npx nest g service modules/payments  // install payments service
+
+npx nest g module modules/carts  // install carts module 
+npx nest g controller modules/carts  // install carts controller 
+npx nest g service modules/carts  // install carts service
+
+npm i stripe
+
+npm i @nestjs/throttler
+
+
+// SOLUTION FIXES =======================================
+npm install @nestjs/config
+npm install -D @types/bcrypt @types/passport-jwt
+npm install class-transformer class-validator
